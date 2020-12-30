@@ -45,7 +45,7 @@ public class Employee {
     }
 
     public void setEmployeeAge(int employeeAge) {
-        if(employeeAge>=18||employeeAge<=65)
+        if(employeeAge>=18&&employeeAge<=65)
             this.employeeAge = employeeAge;
         else
             this.employeeAge=18;
@@ -62,8 +62,12 @@ public class Employee {
             this.employeeSex="男";
     }
 
+    /**
+     * 获取部门对象，如果没有实例化，先实例化后再返回
+     * @return 部门对象信息
+     */
     public Department getMyDepartment() {
-        if(this.myDepartment==null);
+        if(this.myDepartment==null)
             this.myDepartment=new Department();
         return this.myDepartment;
     }
@@ -72,8 +76,12 @@ public class Employee {
         this.myDepartment = myDepartment;
     }
 
+    /**
+     * 获取职位对象，如果没有实例化，先实例化后再返回
+     * @return 职位对象信息
+     */
     public Position getMyPosition() {
-        if(this.myPosition==null);
+        if(this.myPosition==null)
             this.myPosition=new Position();
         return myPosition;
     }
@@ -83,7 +91,7 @@ public class Employee {
     }
 
     public String info(){
-        String str="姓名："+this.getEmployeeName()+"\n工号："+this.getEmployeeNum()+"\n性别："+this.getEmployeeSex()+
+        String str ="姓名："+this.getEmployeeName()+"\n工号："+this.getEmployeeNum()+"\n性别："+this.getEmployeeSex()+
                 "\n年龄："+this.getEmployeeAge()+
                 "\n职务："+this.getMyDepartment().getDepartName()+this.getMyPosition().getPositionName();
         return str;
