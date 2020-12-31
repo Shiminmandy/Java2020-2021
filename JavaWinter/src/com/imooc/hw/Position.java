@@ -2,32 +2,32 @@ package com.imooc.hw;
 
 public class Position {
     //能够描述职务编号，职务名称
-    private String PositionNum;
-    private String PositionName;
+    private String positionNum;
+    private String positionName;
 
     public Position(){
 
     }
 
-    public Position(String PositionNum,String PositionName){
-        this.setPositionNum(PositionNum);
-        this.setPositionName(PositionName);
+    public Position(String positionNum,String positionName){
+        this.setPositionNum(positionNum);
+        this.setPositionName(positionName);
     }
 
 
     public String getPositionNum() {
-        return PositionNum;
+        return positionNum;
     }
 
     public void setPositionNum(String positionNum) {
-        PositionNum = positionNum;
+        this.positionNum = positionNum;
     }
 
     public String getPositionName() {
-        return this.PositionName;
+        return this.positionName;
     }
 
     public void setPositionName(String positionName) {
-        PositionName = positionName;
+        this.positionName = positionName;
     }
 }
