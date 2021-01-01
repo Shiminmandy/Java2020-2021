@@ -6,6 +6,7 @@ public class Department {
     private String departNum;//部门编号
     private String departName;//部门名称
     private Employee[] myEmployee;//员工数组   数组是引用类型
+    private int employeeNo;//统计变量
 
     //无参构造方法
     public Department(){
@@ -30,7 +31,7 @@ public class Department {
     }
 
     public void setDepartNum(String departNum) {
-        departNum = departNum;
+        this.departNum = departNum;
     }
 
     /**
@@ -52,6 +53,29 @@ public class Department {
     }
 
     public void setDepartName(String departName) {
-        departName = departName;
+        this.departName = departName;
+    }
+
+    public int getEmployeeNo() {
+        return employeeNo;
+    }
+
+    public void setEmployeeNo(int employeeNo) {
+        this.employeeNo = employeeNo;
+    }
+
+    public void addEmployee(Employee emp){
+        /*
+         * 将员工保存到数组中
+         * 将员工个数保存到employeeNo中
+         */
+        for(int i=0;i<this.getMyEmployee().length;i++){
+            if(this.getMyEmployee()[i]==null) {
+                this.getMyEmployee()[i] = emp;
+                this.employeeNo = i + 1;
+                return;
+            }
+        }
+
     }
 }
