@@ -6,6 +6,8 @@ public class Animal {
     private String name;//昵称
     private int month;//月份
     private String species;//品种
+    //在子类中，可以定义与父类重名的属性
+    public int temp=15;
 
     public Animal(){
 

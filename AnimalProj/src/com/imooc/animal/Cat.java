@@ -2,6 +2,8 @@ package com.imooc.animal;
 //子类在前，父类在后
 public class Cat extends Animal{
     private double weight;//体重
+    //在子类中，可以定义与父类重名的属性
+    public int temp=300;
 
     //无参构造
     public Cat(){

@@ -10,6 +10,7 @@ public class TestInherit {
         one.setSpecies("中华田园猫");
         one.run();
         one.eat();
+        System.out.println(one.temp);//调用的是子类的temp
         System.out.println("===========================");
         Dog two = new Dog();
         two.setName("牛牛");
