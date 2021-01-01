@@ -1,4 +1,4 @@
 package com.imooc.poly;
 
-public class Test {
+public class TestPoly {
 }
