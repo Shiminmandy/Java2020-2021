@@ -5,9 +5,18 @@ public class Cat extends Animal{
     //在子类中，可以定义与父类重名的属性
     public int temp=300;
 
+    public static int st3=44;
+
+    static{
+        System.out.println("我是子类的静态代码块");
+    }
+    {
+        System.out.println("我是子类的构造代码块");
+    }
+
     //无参构造
     public Cat(){
-
+        System.out.println("我是子类的无参构造方法");
     }
 
     public double getWeight() {

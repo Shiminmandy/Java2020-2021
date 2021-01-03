@@ -15,7 +15,7 @@ public class TestInherit {
         Dog two = new Dog();
         two.setName("牛牛");
         two.setMonth(1);
-        two.eat();
         two.sleep();
+        two.eat();
     }
 }
