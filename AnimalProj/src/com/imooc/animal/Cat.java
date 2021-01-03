@@ -21,6 +21,6 @@ public class Cat extends Animal{
     //跑动的方法
     public void run(){
         //子类只能访问父类的非私有成员
-        System.out.println(this.getName()+"是一只"+this.getSpecies()+",它在快乐地奔跑");
+        System.out.println(this.getName()+"是一只"+this.getSpecies()+",它在快乐地奔跑.");
     }
 }
