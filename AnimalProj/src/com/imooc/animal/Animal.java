@@ -29,6 +29,8 @@ public class Animal {
     }
 
     public Animal(String name,int month){
+        this.setName(name);
+        this.setMonth(month);
         System.out.println("我是父类的代参构造方法");
     }
 
@@ -70,9 +72,13 @@ public class Animal {
         if(obj==null)
             return false;
         Animal temp=(Animal)obj;
+        //若未在带参构造中给属性赋值，则会显示空指针异常
         if(this.getName().equals(temp.getName()) && (this.getMonth()==temp.getMonth()))
-            return true;
+                return true;
         else
             return false;
+    }
+    public String toString(){
+        return "昵称："+this.getName()+"; 年龄："+this.getMonth();
     }
 }
