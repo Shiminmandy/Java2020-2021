@@ -60,4 +60,19 @@ public class Animal {
     public void eat(){
         System.out.println(this.getName()+"在吃东西");
     }
+
+    /**
+     * Object类介绍
+     * @param obj
+     * @return
+     */
+    public boolean equals(Object obj){
+        if(obj==null)
+            return false;
+        Animal temp=(Animal)obj;
+        if(this.getName().equals(temp.getName()) && (this.getMonth()==temp.getMonth()))
+            return true;
+        else
+            return false;
+    }
 }
