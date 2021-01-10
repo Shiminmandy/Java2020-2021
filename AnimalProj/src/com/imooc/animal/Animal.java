@@ -63,7 +63,7 @@ public class Animal {
 
     //吃东西
     public void eat(){
-        System.out.println(this.getName()+"在吃东西.");
+        System.out.println(this.getName()+"在吃东西");
     }
 
     /**
