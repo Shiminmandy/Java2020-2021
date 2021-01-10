@@ -41,6 +41,8 @@ public class Dog extends Animal{
      */
 
     //eat方法重写, 子类对象调用的是重写后的方法
+    //注解
+    @Override
     public void eat(){
         System.out.println(this.getName()+"最近没有食欲~~");
     }
