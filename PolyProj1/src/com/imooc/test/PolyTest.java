@@ -19,5 +19,26 @@ public class PolyTest {
         two.setMonth(2);
         System.out.println(two.getMonth());
         three.eat(); //狗吃肉~~
+
+        System.out.println("==================");
+        /*向下转型，强制类型转换
+         *子类引用指向父类对象，此处必须进行强转，可以调用子类特有方法
+         * 必须满足转型条件才能进行强转
+         */
+
+        Cat temp=(Cat) two;
+        temp.eat();
+        temp.run();
+        temp.getMonth();
+        //正常运行
+
+        //Dog temp2=(Dog) two;
+        //temp2.eat();
+        //temp2.sleep();
+        //temp2.getSex();
+        //Exception in thread "main" java.lang.ClassCastException: class com.imooc.animal.
+        // Cat cannot be cast to class com.imooc.animal.Dog (com.imooc.animal.Cat and com.imooc.animal.Dog
+        // are in unnamed module of loader 'app')
+        //	at com.imooc.test.PolyTest.main(PolyTest.java:35)
     }
 }
