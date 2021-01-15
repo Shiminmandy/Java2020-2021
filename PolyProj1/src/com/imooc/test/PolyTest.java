@@ -24,21 +24,36 @@ public class PolyTest {
         /*向下转型，强制类型转换
          *子类引用指向父类对象，此处必须进行强转，可以调用子类特有方法
          * 必须满足转型条件才能进行强转
+         * instanceof 运算符，返回true，false
          */
 
-        Cat temp=(Cat) two;
-        temp.eat();
-        temp.run();
-        temp.getMonth();
-        //正常运行
+        if(two instanceof Cat){
+            Cat temp=(Cat) two;
+            temp.eat();
+            temp.run();
+            temp.getMonth();
+            System.out.println("two可以转换为Cat类型");
+        }
 
-        //Dog temp2=(Dog) two;
-        //temp2.eat();
-        //temp2.sleep();
-        //temp2.getSex();
+        //正常运行
+        if(two instanceof Dog) {
+            Dog temp2 = (Dog) two;
+            temp2.eat();
+            temp2.sleep();
+            temp2.getSex();
+            System.out.println("two可以转换为Dog类型");
+        }
         //Exception in thread "main" java.lang.ClassCastException: class com.imooc.animal.
         // Cat cannot be cast to class com.imooc.animal.Dog (com.imooc.animal.Cat and com.imooc.animal.Dog
         // are in unnamed module of loader 'app')
         //	at com.imooc.test.PolyTest.main(PolyTest.java:35)
+
+        if(two instanceof Animal){
+            System.out.println("Animal");
+        }
+
+        if(two instanceof Object){
+            System.out.println("Object");
+        }
     }
 }
