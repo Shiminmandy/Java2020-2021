@@ -31,4 +31,31 @@ public class Master {
         }
     }
 
+    /**
+     * 饲养何种宠物
+     * 空闲时间多：养狗狗
+     * 空闲时间少：养猫咪
+     */
+
+    //方案一
+//    public Dog hasMainTime(){
+//        System.out.println("主人休闲时间比较充足，适合养狗狗");
+//        return new Dog();
+//    }
+//
+//    public Cat hasLittleTime(){
+//        System.out.println("主人平时比较忙碌，适合养狗狗");
+//        return new Cat();
+//    }
+
+    //方案二
+    public Animal raise(boolean isManyTime){
+        if(isManyTime){
+            System.out.println("主人休闲时间比较充足，适合养狗狗");
+            return new Dog();
+        }else{
+            System.out.println("主人平时比较忙碌，适合养狗狗");
+            return new Cat();
+        }
+    }
 }
