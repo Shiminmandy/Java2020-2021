@@ -1,6 +1,7 @@
 package com.imooc.animal;
 
-public class Animal {
+//抽象类 abstract：不允许实例化，可以通过向上转型，指向子类实例
+public abstract class Animal {
     //属性： 姓名，年龄
     private String name;
     private int month;
@@ -33,7 +34,7 @@ public class Animal {
     }
 
     //方法：吃东西
-    public void eat(){
-        System.out.println("动物都有吃东西的能力。");
-    }
+    //抽象方法：不允许包含方法体；子类中需要重写父类中的抽象方法，否则子类也是抽象类
+    //static private final 不能与abstract并存
+    public abstract void eat();
 }
