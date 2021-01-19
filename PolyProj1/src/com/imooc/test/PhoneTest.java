@@ -1,8 +1,7 @@
 package com.imooc.test;
 
-import com.imooc.tel.FourthPhone;
-import com.imooc.tel.IPhoto;
-import com.imooc.tel.Camera;
+import com.imooc.tel.*;
+
 public class PhoneTest {
     public static void main(String[] args){
         FourthPhone phone=new FourthPhone();
@@ -17,6 +16,12 @@ public class PhoneTest {
         ip.photo();
         ip=new Camera();
         ip.photo();
+        System.out.println("=====================");
+        System.out.println(INet.TEMP);
+        INet net=new SmartWatch();
+        System.out.println(net.TEMP);//20?30?
+        SmartWatch sw=new SmartWatch();
+        System.out.println(sw.TEMP);
 
 
 
