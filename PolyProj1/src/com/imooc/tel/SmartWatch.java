@@ -14,6 +14,6 @@ public class SmartWatch implements INet{
 
     @Override
     public void connection() {
-
+        
     }
 }

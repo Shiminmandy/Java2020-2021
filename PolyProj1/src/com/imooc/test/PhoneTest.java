@@ -22,6 +22,8 @@ public class PhoneTest {
         System.out.println(net.TEMP);//20?30?
         SmartWatch sw=new SmartWatch();
         System.out.println(sw.TEMP);
+        net.connection();
+        INet.stop();
 
 
 
