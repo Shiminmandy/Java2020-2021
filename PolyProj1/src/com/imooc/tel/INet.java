@@ -20,6 +20,6 @@ public interface INet {
     //static: 静态方法 可以带方法体 jdk 1.8后新增
     //不可以在实现类中重写，可以同接口名调用
     static void stop(){
-        System.out.println("我是接口中的静态方法");
+        System.out.println("我是接口中的静态方法。");
     }
 }
