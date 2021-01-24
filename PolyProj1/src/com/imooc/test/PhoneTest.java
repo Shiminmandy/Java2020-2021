@@ -26,8 +26,11 @@ public class PhoneTest {
         System.out.println(sw.TEMP);
         net.connection();
         INet.stop();
+        System.out.println("=====================");
         INet net2=new SmartWatch();
         net2.connection();
+        IPhoto ip2=new SmartWatch();
+        ip2.connection();
 
 
 

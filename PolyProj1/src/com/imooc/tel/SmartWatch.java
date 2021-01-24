@@ -13,7 +13,13 @@ public class SmartWatch implements INet,IPhoto{
     }
 
     @Override
+    public void photo() {
+
+    }
+
+    @Override
     public void connection() {
+        System.out.println("SmartWatch中的connection");
 
     }
 }
