@@ -20,10 +20,14 @@ public class PhoneTest {
         System.out.println(INet.TEMP);
         INet net=new SmartWatch();
         System.out.println(net.TEMP);//20?30?
+        net.connection();
+        INet.stop();
         SmartWatch sw=new SmartWatch();
         System.out.println(sw.TEMP);
         net.connection();
         INet.stop();
+        INet net2=new SmartWatch();
+        net2.connection();
 
 
 
