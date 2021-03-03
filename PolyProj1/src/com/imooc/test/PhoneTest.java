@@ -16,7 +16,7 @@ public class PhoneTest {
         ip.photo();
         ip=new Camera();
         ip.photo();
-        System.out.println("=======================");
+        System.out.println("========================");
         System.out.println(INet.TEMP);
         INet net=new SmartWatch();
         System.out.println(net.TEMP);//20?30?
@@ -26,7 +26,7 @@ public class PhoneTest {
         System.out.println(sw.TEMP);
         net.connection();
         INet.stop();
-        System.out.println("========================");
+        System.out.println("=========================");
         INet net2=new SmartWatch();
         net2.connection();
         IPhoto ip2=new SmartWatch();
