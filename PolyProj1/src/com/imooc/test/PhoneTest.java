@@ -31,7 +31,11 @@ public class PhoneTest {
         net2.connection();
         IPhoto ip2=new SmartWatch();
         ip2.connection();
-
+        System.out.println("===========================");
+        INet net3=new FourthPhone();
+        net3.connection();
+        IPhoto ip3=new FourthPhone();
+        ip3.connection();
 
 
 

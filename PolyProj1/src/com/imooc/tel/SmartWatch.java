@@ -1,5 +1,5 @@
 package com.imooc.tel;
-
+//一个类中可同时实现多个接口
 public class SmartWatch implements INet,IPhoto{
     public static final int TEMP=30;
     public void call(){
@@ -19,6 +19,7 @@ public class SmartWatch implements INet,IPhoto{
 
     @Override
     public void connection() {
+        INet.super.connection();//调用接口中默认的方法
         System.out.println("SmartWatch中的connection");
 
     }
