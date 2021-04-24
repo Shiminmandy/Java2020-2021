@@ -13,6 +13,11 @@ public class Bear  extends Animal implements IAct{
 
     @Override
     public void act() {
+        this.setName("Bill");
+        this.setAge(1);
+        System.out.println("表演者："+this.getName()+"\n"+"年龄："+this.getAge());
+        this.skill();
+        this.love();
 
     }
 }

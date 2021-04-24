@@ -32,6 +32,13 @@ public class Lion extends Animal implements IAct{
 
     @Override
     public void act() {
-
+        this.setName("Lain");
+        this.setAge(2);
+        this.setSex("公狮");
+        this.setColor("灰色");
+        System.out.println("表演者："+this.getName()+"\n"+"年龄："+"\n"+this.getAge()+
+                "\n"+"性别："+this.getSex()+"\n"+"毛色："+this.getColor());
+        this.skill();
+        this.love();
     }
 }

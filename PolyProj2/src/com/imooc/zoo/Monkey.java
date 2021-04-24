@@ -23,6 +23,12 @@ public class Monkey extends Animal implements IAct{
 
     @Override
     public void act() {
+        this.setName("Tom");
+        this.setAge(1);
+        this.setType("金丝猴");
+        System.out.println("表演者："+this.getName()+"\n"+"年龄："+"\n"+this.getAge()+"\n"+"品种："+this.getType());
+        this.skill();
+        this.love();
 
     }
 }

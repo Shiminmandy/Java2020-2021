@@ -32,22 +32,23 @@ public class ZooTest {
             if(choice==1){
                 System.out.println("下面给您带来"+choice+"号动物的信息：");
                 Bear bear=new Bear();
-                bear.setName("Bill");
-                bear.setAge(1);//年龄不能小于0
-                System.out.println("表演者："+bear.getName()+"\n"+"年龄："+bear.getAge());
-                bear.skill();
-                bear.love();
-
-
-
+                bear.act();//每个表演者的信息通过调用act()方法输出
             }else if(choice==2){
                 System.out.println("下面给您带来"+choice+"号动物的信息：");
+                Lion lion=new Lion();
+                lion.act();
             }else if(choice==3){
                 System.out.println("下面给您带来"+choice+"号动物的信息：");
+                Monkey monkey=new Monkey();
+                monkey.act();
             }else if(choice==4){
                 System.out.println("下面给您带来"+choice+"号动物的信息：");
+                Parrot parrot=new Parrot();
+                parrot.act();
             }else if(choice==5){
                 System.out.println("下面给您带来"+choice+"号动物的信息：");
+                Clown clown=new Clown();
+                clown.act();
             }
             else{
                 System.out.println("输入信息不正确，请重新输入吧~");

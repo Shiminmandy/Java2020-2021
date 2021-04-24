@@ -1,8 +1,9 @@
 package com.imooc.zoo;
 
 public class Clown implements IAct{
+    public String name;
 
-    public int year;
+    private int year;
 
     public int getYear() {
         return year;
@@ -19,6 +20,11 @@ public class Clown implements IAct{
 
     @Override
     public void act() {
+        String name="kahle";
+        this.setYear(5);
+        System.out.println("表演者："+name+"\n"+"艺龄："+this.getYear());
+        this.dress();
+        this.skill();
 
     }
     public void dress(){

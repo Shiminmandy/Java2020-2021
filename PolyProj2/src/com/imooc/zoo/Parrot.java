@@ -23,6 +23,11 @@ public class Parrot extends Animal implements IAct{
 
     @Override
     public void act() {
-
+        this.setName("Rose");
+        this.setAge(1);
+        this.setType("牡丹鹦鹉");
+        System.out.println("表演者："+this.getName()+"\n"+"年龄："+this.getAge()+"\n"+"品种："+this.getType());
+        this.skill();
+        this.love();
     }
 }
