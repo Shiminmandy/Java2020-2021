@@ -1,5 +1,8 @@
 package com.imooc.zoo;
-
+/*
+ *继承自animal实现IAct
+ * 新增属性：颜色 color, 性别 sex
+ */
 public class Lion extends Animal implements IAct{
     public String color;
     public String sex;
@@ -36,7 +39,7 @@ public class Lion extends Animal implements IAct{
         this.setAge(2);
         this.setSex("公狮");
         this.setColor("灰色");
-        System.out.println("表演者："+this.getName()+"\n"+"年龄："+"\n"+this.getAge()+
+        System.out.println("表演者："+this.getName()+"\n"+"年龄："+this.getAge()+
                 "\n"+"性别："+this.getSex()+"\n"+"毛色："+this.getColor());
         this.skill();
         this.love();

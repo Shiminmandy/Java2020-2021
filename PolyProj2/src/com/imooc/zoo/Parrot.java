@@ -1,5 +1,8 @@
 package com.imooc.zoo;
-
+/*
+ *继承自animal实现IAct
+ * 新增属性：品种type
+ */
 public class Parrot extends Animal implements IAct{
     public String type;
 

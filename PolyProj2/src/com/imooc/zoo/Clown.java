@@ -1,5 +1,9 @@
 package com.imooc.zoo;
-
+/*
+ *实现IAct
+ * 属性：名字name,艺龄year
+ * 新增方法：着装 dress
+ */
 public class Clown implements IAct{
     public String name;
 
@@ -10,7 +14,11 @@ public class Clown implements IAct{
     }
 
     public void setYear(int year) {
-        this.year = year;
+        if(year<0){
+            this.year=0;
+        }else {
+            this.year = year;
+        }
     }
 
     @Override

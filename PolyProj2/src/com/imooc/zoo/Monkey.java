@@ -1,5 +1,8 @@
 package com.imooc.zoo;
-
+/*
+ *继承自animal实现IAct
+ * 新增属性：品种 type
+ */
 public class Monkey extends Animal implements IAct{
     public String type;
 
@@ -26,7 +29,7 @@ public class Monkey extends Animal implements IAct{
         this.setName("Tom");
         this.setAge(1);
         this.setType("金丝猴");
-        System.out.println("表演者："+this.getName()+"\n"+"年龄："+"\n"+this.getAge()+"\n"+"品种："+this.getType());
+        System.out.println("表演者："+this.getName()+"\n"+"年龄："+this.getAge()+"\n"+"品种："+this.getType());
         this.skill();
         this.love();
 
