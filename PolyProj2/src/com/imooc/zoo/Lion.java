@@ -22,12 +22,12 @@ public class Lion extends Animal implements IAct{
 
     @Override
     public void love() {
-        System.out.println("喜欢吃各种肉类~");
+        System.out.println("爱好：喜欢吃各种肉类~");
     }
 
     @Override
     public void skill() {
-        System.out.println("擅长钻火圈");
+        System.out.println("技能：擅长钻火圈");
     }
 
     @Override

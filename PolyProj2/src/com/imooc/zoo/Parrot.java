@@ -13,12 +13,12 @@ public class Parrot extends Animal implements IAct{
 
     @Override
     public void love() {
-        System.out.println("喜欢吃坚果和松子");
+        System.out.println("爱好：喜欢吃坚果和松子");
     }
 
     @Override
     public void skill() {
-        System.out.println("擅长模仿");
+        System.out.println("技能：擅长模仿");
     }
 
     @Override

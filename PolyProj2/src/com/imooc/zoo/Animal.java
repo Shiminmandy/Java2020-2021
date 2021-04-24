@@ -1,8 +1,8 @@
 package com.imooc.zoo;
 
 public abstract class Animal{
-    public String name;
-    public int age;
+    private String name;
+    private int age;
 
     public String getName() {
         return name;

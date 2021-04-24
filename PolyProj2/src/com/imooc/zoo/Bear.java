@@ -3,12 +3,12 @@ package com.imooc.zoo;
 public class Bear  extends Animal implements IAct{
     @Override
     public void love() {
-        System.out.println("喜欢卖萌~");
+        System.out.println("爱好：喜欢卖萌~");
     }
 
     @Override
     public void skill() {
-        System.out.println("挽着花篮，打着雨伞，自立走秀");
+        System.out.println("技能：挽着花篮，打着雨伞，自立走秀");
     }
 
     @Override

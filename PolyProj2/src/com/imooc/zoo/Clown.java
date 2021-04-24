@@ -14,14 +14,14 @@ public class Clown implements IAct{
 
     @Override
     public void skill() {
-
+        System.out.println("技能：脚踩高跷，进行杂技魔术表演");
     }
 
     @Override
     public void act() {
-        System.out.println("脚踩高跷，进行杂技魔术表演");
+
     }
     public void dress(){
-        System.out.println("身穿五彩服装，头上戴着五彩的帽子，脸上画着夸张的彩妆");
+        System.out.println("着装：身穿五彩服装，头上戴着五彩的帽子，脸上画着夸张的彩妆");
     }
 }

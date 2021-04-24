@@ -13,12 +13,12 @@ public class Monkey extends Animal implements IAct{
 
     @Override
     public void love() {
-        System.out.println("喜欢模仿人的动作表情");
+        System.out.println("爱好：喜欢模仿人的动作表情");
     }
 
     @Override
     public void skill() {
-        System.out.println("骑车过独木桥");
+        System.out.println("技能：骑车过独木桥");
     }
 
     @Override
