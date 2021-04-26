@@ -5,7 +5,7 @@ public abstract class Animal{
     private int age;
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -13,7 +13,7 @@ public abstract class Animal{
     }
 
     public int getAge() {
-        return age;
+        return this.age;
     }
 
     public void setAge(int age) {
