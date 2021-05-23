@@ -6,6 +6,10 @@ public class Cat {
     private String name;//名字
     private int month;//年龄
     private String species;//品种
+    //无参构造方法
+    public Cat(){
+
+    }
 
     public Cat(String name, int month, String species) {
         this.name = name;
