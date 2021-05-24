@@ -10,11 +10,11 @@ public class CatTest {
         Cat huahua=new Cat("花花",12,"英国短毛猫");
         Cat fanfan=new Cat("凡凡",3,"中华田园猫");
         //将宠物猫对象放入HashSet中
-        Set set =new HashSet();
+        Set<Cat> set =new HashSet<Cat>();//加入泛型
         set.add(huahua);
         set.add(fanfan);
         //显示宠物猫信息
-        Iterator it=set.iterator();
+        Iterator<Cat> it=set.iterator();
         while(it.hasNext()){
             System.out.println(it.next());
         }
@@ -53,7 +53,7 @@ public class CatTest {
         Cat c=null;
         it=set.iterator();
         while(it.hasNext()){
-            c=(Cat)it.next();
+            c=it.next();
             if(c.getName().equals("花花")){
                 flag=true;//找到了
                 break;
@@ -65,5 +65,34 @@ public class CatTest {
         }else{
             System.out.println("花花没找到");
         }
+        //删除花花二代的信息并重新输出
+        //增强型for循环
+//        for(Cat cat:set){
+//            if("花花二代".equals(cat.getName())){
+//                set.remove(cat);
+//                break;
+//            }
+//        }
+        Set<Cat> set1=new HashSet<Cat>();
+        for(Cat cat:set){
+            if(cat.getMonth()<5){
+                set1.add(cat);
+            }
+        }
+        set.removeAll(set1);
+        System.out.println("====================");
+        System.out.println("删除年龄小于5的数据:");
+        for(Cat cat:set){
+            System.out.println(cat);
+        }
+        System.out.println("====================");
+        //删除集合中的所有宠物猫信息
+        boolean flag1=set.removeAll(set);
+        if(set.isEmpty()){
+            System.out.println("猫都不见了。。。");
+        }else{
+            System.out.println("猫还在。。。");
+        }
+
     }
 }
