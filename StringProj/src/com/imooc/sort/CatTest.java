@@ -15,13 +15,19 @@ public class CatTest {
         catList.add(fanfan);
         catList.add(maomao);
         //排序前
-        System.out.println("按名字排序前：");
+        System.out.println("排序前：");
         for(Cat cat:catList){
             System.out.println(cat);
         }
         //按名字进行升序排序
         Collections.sort(catList,new NameComparator());
-        System.out.println("按名字排序后：");
+        System.out.println("按名字升序排序后：");
+        for(Cat cat:catList){
+            System.out.println(cat);
+        }
+        //按年龄进行降序排序
+        Collections.sort(catList,new AgeComparator());
+        System.out.println("按年龄降序排序后：");
         for(Cat cat:catList){
             System.out.println(cat);
         }
