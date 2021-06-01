@@ -1,4 +1,13 @@
 package com.imooc.bank;
+//取款
+public class DrawAccount implements Runnable{
+    Bank bank;
+    public DrawAccount(Bank bank){
+        this.bank=bank;
+    }
 
-public class DrawAccount {
+    @Override
+    public void run() {
+        bank.drawAccount();
+    }
 }
